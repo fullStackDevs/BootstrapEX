@@ -1,0 +1,67 @@
+@CHARSET "ISO-8859-1";
+
+#heather-wraper {
+	position: absolute;
+	height: 100%;
+	width: 250px;	
+	left: -250px;	
+	background-color:  #404040;
+	transition: left 0.5s linear;
+
+}
+
+.sidebar-menu li {
+	list-style-type: none;
+	line-height: 30px;
+	
+}
+
+.sidebar-menu li a {
+	text-decoration: none; 
+	font-size: 18px;
+	color: #40bf40;
+}
+
+#wraper.sidebarMenuVisible #heather-wraper {
+	left: 0px;
+	transition: left 0.5s linear;
+}
+
+#wraper.sidebarMenuVisible #main-content-wraper {
+	margin-left: 250px;
+	transition: margin-left 0.5s;
+}
+
+#wraper #main-content-wraper {
+	margin-left: 0px;
+	transition: margin-left 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

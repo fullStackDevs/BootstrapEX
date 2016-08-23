@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- *** Cu jQuery 3 nu merge dropdown-ul -->
+<!-- *** Acest script TREBUIE sa fie pus inaintea scriptului cu sursa:  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js". Daca le punem invers nu mai merge drop down-ul -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	body {
+		margin-top: 40px;
+	}
+	
+.carousel-inner > .item > img {
+	margin: 0 auto;
+}
+
+#carouselGalery {
+	margin:30px 0  0 30px;
+}
+
+.row {
+	margin: 20px 0 0 20px;
+}
+
+.glyphicon-check, .glyphicon-education, .glyphicon-move  {
+	font-size: 3em;
+}
+
+</style>
+
+</head>
+<body data-spy="scroll" data-target="#topNavbar">
+
+	<header>
+		<div class="navbar navbar-fixed-top navbar-inverse" id="topNavbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#myCollapsibleMenu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="" class="navbar-brand">MyBrand</a>
+				</div>
+				<div class="navbar-collapse collapse" id="myCollapsibleMenu">
+					<ul class="nav navbar-nav">
+						<li><a href="#feedback">Feedback </a></li>
+						<li><a href="#galery">Gallery</a></li>
+						<li><a href="#features">Features</a></li>
+						<li><a href="#faq">FAQ</a></li>
+						<li><a href="#contact">Contact us</a></li>
+					</ul>
+					<a href="" class="btn btn-warning navbar-btn navbar-right">Download Now</a>
+				</div>
+			</div>
+		</div><!-- End Navbar -->
+		<div class="jumbotron">
+			<div class="container text-center">
+				<h1>WikiBootstrap</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia commodo.</p>
+				<div class="btn-group">
+					<button class="btn btn-warning btn-lg">Download App</button>
+					<button class="btn btn-default btn-lg">Visit storre</button>
+					<button class="btn btn-warning btn-lg">Spread the owrd</button>
+				</div>
+			</div>
+		</div>
+		
+	</header>
+	
+	<!-- Feedback section -->
+	<div class="container">
+		<section>
+			<div class="page-header" id="feedback">
+				<h3>Feedback <small>Check out the awesome feedback</small></h3>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<blockquote>
+						<p>Praesent maximus consequat leo, vitae consectetur nisi viverra eu. Curabitur eget velit ac ante sollicitudin elementum. Donec porttitor nulla lacus, malesuada fringilla purus finibus nec. Donec id feugiat ex, sit amet lacinia lectus</p>
+						<footer>John Doe</footer>
+					</blockquote>
+				</div>
+				<div class="col-sm-4">
+					<blockquote>
+						<p>Praesent maximus consequat leo, vitae consectetur nisi viverra eu. Curabitur eget velit ac ante sollicitudin elementum. Donec porttitor nulla lacus, malesuada fringilla purus finibus nec. Donec id feugiat ex, sit amet lacinia lectus</p>
+						<footer>Abraham Lincon</footer>
+					</blockquote>
+				</div>
+				<div class="col-sm-4">
+					<blockquote>
+						<p>Praesent maximus consequat leo, vitae consectetur nisi viverra eu. Curabitur eget velit ac ante sollicitudin elementum. Donec porttitor nulla lacus, malesuada fringilla purus finibus nec. Donec id feugiat ex, sit amet lacinia lectus</p>
+						<footer>Jony Walker</footer>
+					</blockquote>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	<!-- Call on action section-->
+	<section>
+		<div class="well">
+			<div class="container text-center">
+				<h3>Subscribe for more free stuff</h3>
+				<p>Enter your name and email</p>
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="nameInput">Subscribe</label>
+						<input type="text" id="nameInput" class="form-control" placeholder="Your name">						
+					</div>
+					<div class="form-group">
+						<label for="emailInput">Email address</label>
+						<input type="text" class="form-control" placeholder="Enter your Email">
+					</div>
+					<button type="submit" class="btn btn-default">Subscribe</button>
+				</form>
+			</div>
+		</di><!-- end well -->
+	</section>
+	
+	
+	
+	<!-- Gallery section -->
+	<section>
+		<div class="container">
+			<div class="carousel slide" id="galery">
+				<ul class="carousel-indicators">
+					<li data-target="#galery" data-slide-to="0"></li>
+					<li data-target="#galery" data-slide-to="1"></li>
+					<li data-target="#galery" data-slide-to="2"></li>
+					<li data-target="#galery" data-slide-to="3"></li>	
+				</ul>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img alt="smartphone" src="../images/smartphone_carousel_img/smartphone_carousel_img_1.jpg">
+						<div class="carousel-caption">
+							<h3>Caption header image 1</h3>
+							<p>This is the caption of the first image. </p>
+						</div>						
+					</div>
+					<div class="item">
+						<img alt="smartphone" src="../images/smartphone_carousel_img/smartphone_carousel_img_2.jpg"">
+						<div class="carousel-caption">
+							<h3>Caption header image 2</h3>
+							<p>This is the caption of the second image</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="smartphone" src="../images/smartphone_carousel_img/smartphone_carousel_img_3.jpg"">
+						<div class="carousel-caption">
+							<h3>Caption header image 3</h3>
+							<p>This is the caption of the image 3</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="smartphone" src="../images/smartphone_carousel_img/smartphone_carousel_img_4.jpg"">
+						<div class="carousel-caption">
+							<h3>Caption header image 4</h3>
+							<p>This is the caption of the image 4</p>
+						</div>
+					</div>
+					
+					<!-- Carousel left - right arrows -->
+					<a href="#galery" class="left carousel-control" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a href="#galery" class="right carousel-control" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<br>
+
+	<!-- Features section -->
+	<div class="container">
+		<section>
+			<div class="page-header" id="features">
+				<h3>Features <small>Some awesome features of this page</small></h3>
+			</div>
+			<div class="row">
+				<div class="col-sm-8">
+					<h3>This is the heading</h3>
+					<p>
+						Mauris nec eleifend augue. Etiam ut tempus nisl, in viverra sapien. Fusce accumsan vehicula scelerisque. Aliquam quis ante quis lacus varius sodales ac eget arcu. Maecenas id sollicitudin enim. Morbi ligula orci, iaculis pharetra vestibulum nec, facilisis quis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor ligula vel ipsum semper pretium.
+					</p>
+				</div>
+				<div class="col-sm-4">
+					<img alt="smartphone" src="../images/features-images/smartphone_1.jpg" class="img-circle">
+				</div>
+			</div><!-- End Row -->
+			<div class="row">
+				<div class="col-sm-4">
+					<img alt="smartphonw" src="../images/features-images/smartphone_2.jpg" class="img-circle">
+				</div>
+				<div class="col-sm-8">
+					<h3>This is another heading</h3>
+					<p> Aliquam nisl velit, placerat in ante ac, tempus ullamcorper magna. Maecenas cursus justo vitae efficitur mollis. Morbi sed ultricies nibh. Nulla vitae massa nunc.Integer cursus in dui maximus ultricies. Suspendisse vulputate dictum velit convallis semper. Proin eu hendrerit leo. Integer consectetur convallis vehicula.</p>
+				</div>
+			</div><!-- End row -->
+			<div class="row">
+				<div class="col-sm-8">
+					<p> Aenean rhoncus in arcu ut posuere. Fusce sapien purus, accumsan sit amet euismod ac, dapibus ut risus. Aliquam nisl velit, placerat in ante ac, tempus ullamcorper magna. Maecenas cursus justo vitae efficitur mollis. Morbi sed ultricies nibh. Nulla vitae massa nunc. </p>
+				</div>
+				<div class="col-sm-4">
+					<img alt="smartphone" src="../images/features-images/smartphone_3.jpg" class="img-circle">
+				</div>				
+			</div>
+			
+			<hr>
+			<!-- Three columns in the Features section -->
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-body">
+							<span class="glyphicon glyphicon-check"></span>
+							<p>Sed dui nisi, viverra sit amet tempus et, auctor in ex. Mauris varius libero sit amet sem finibus laoreet. Etiam sed purus ut velit tincidunt maximus. Cras eget arcu justo. Mauris nec ipsum enim.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-body">
+							<span class="glyphicon glyphicon-education"></span>
+							<p>Fusce sapien purus, accumsan sit amet euismod ac, dapibus ut risus. Aliquam nisl velit, placerat in ante ac, tempus ullamcorper magna. Maecenas cursus justo vitae efficitur mollis. Morbi sed ultricies nibh. Nulla vitae massa nunc.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="panel panel-default text-center">
+						<div class="panel-body">
+							<span class="glyphicon glyphicon-move"></span>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ligula orci, iaculis pharetra vestibulum nec, facilisis quis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+	</div>
+	
+	<!-- FAQ -->	
+	<div class="container">
+		<section>
+			<div class="page-header" id="faq">
+				<h3>FAQ. <small>Engaging with customers</small></h3>
+			</div><!-- End Page Header -->
+			
+			<div clas="panel-group" id="acordeonParent">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#contentPanel_1" data-toggle="collapse" data-parent="#acordeonParent">Question 1</a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse in" id="contentPanel_1">
+						<div class="panel-body">
+							<p>Praesent maximus consequat leo, vitae consectetur nisi viverra eu. Fusce libero diam, dapibus in orci quis, maximus egestas felis. Curabitur eget velit ac ante sollicitudin elementum. Donec porttitor nulla lacus, malesuada fringilla purus finibus nec. Donec id feugiat ex, sit amet lacinia lectus. Donec blandit massa eget sapien faucibus, sed finibus justo imperdiet. Suspendisse tristique nisi libero, at egestas est ornare eget. In eget mi metus. </p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#contentPanel_2" data-toggle="collapse" data-parent="#acordeonParent">Questionnel 2</a>
+						</div>
+					</div>					
+					<div class="panel-collapse collapse" id="contentPanel_2">
+						<div class="panel-body">
+							<p> Mauris nec eleifend augue. Etiam ut tempus nisl, in viverra sapien. Fusce accumsan vehicula scelerisque. Aliquam quis ante quis lacus varius sodales ac eget arcu. Maecenas id sollicitudin enim. Aliquam sit amet lorem ac enim rhoncus malesuada. Morbi sit amet orci vitae metus blandit mollis eget ut tellus.</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<a href="#contentPanel_3" data-toggle="collapse" data-parent="#acordeonParent">Question 3</a>
+						</div>
+					</div>
+					<div class="panel-collapse collapse" id="contentPanel_3">
+						<div class="panel-body">
+							<p>Ut in ornare ligula, a vulputate enim. Nullam in efficitur felis. Sed ultricies tempus sapien. Integer dapibus neque vitae imperdiet posuere. Pellentesque vitae velit suscipit, mollis libero nec, gravida diam. Aenean rhoncus in arcu ut posuere. Fusce sapien purus, accumsan sit amet euismod ac, dapibus ut risus</p>
+						</div>
+					</div>
+				</div>
+		</section>
+	</div>
+	
+	<!-- Contact -->
+	<div class="container">
+		<section>
+			<div class="page-header" id="contact">
+				<h3>Contact Us. <small>Contact us for more</small></h3>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<p>Send us a message, or contact us from the address below.</p>
+					<address>
+						<strong>WikiBootstrap Pvt Ltd.,/strong></strong></br>
+						Bd. Independentei, nr. 9</br>
+						Enterance 3E</br>
+						Iasi -600884</br>
+						Tel: 0232/377583
+					</address>				
+				</div>
+				<div class="col-lg-8">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="nameField" class="col-lg-2  control-label">Name</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="nameField" placeholder="Enter your name">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="emailField" class="col-lg-2 control-label">Email</label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="emailField" placeholder="Enter Your Email Address">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="messageField" class="col-lg-2 control-label">Message</label>
+							<div class="col-lg-10">
+								<textarea rows="5" cols="20" id="messageField" class="form-control" placeholder="Enter your message"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-12 col-lg-offset-2">
+								<button class="btn btn-primary">Submit</button>
+							</div>
+						</div>						
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	<hr>
+	
+	<!-- Footer -->
+	<footer>
+		<div class="container text-center">
+			<h3>Subscribe for more stuff</h3>
+			<p>Enter your name and email</p>
+			<form class="form-inline">
+				<div class="form-group">
+					<label for="nameField">Subscribe</label>
+					<input type="text" class="form-control" id="nameField" placeholder="Enter Your Name">
+				</div>
+				<div class="form-group">
+					<label for="emailField">Email address</label>
+					<input type="text" class="form-control" id="emailField" placeholder="Enter Your Email">
+				</div>
+				<button type="submit" class="btn btn-default">Subscribe</button>
+			</form>
+			
+			<hr>
+			
+			<ul class="list-inline">
+				<li><a href="">Facebook</a></li>
+				<li><a href="">Tweeter</a></li>
+				<li><a href="">YouTube</a></li>
+			</ul>
+			
+			<p>&copy; Copyright @ 2016</p>
+			
+		</div>
+	</footer>
+
+	
+	
+
+</body>
+</html>

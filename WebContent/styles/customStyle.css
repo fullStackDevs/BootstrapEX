@@ -1,0 +1,61 @@
+
+#sidebar-wraper {
+	z-index: 1;
+	position: absolute;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background-color: #232323;
+	transition: left 0.3s linear;
+}
+
+#sidebar-wraper .sidebar-nav{
+	padding-top: 50px;
+}
+
+#sidebar-wraper .sidebar-nav li{
+	list-style: none;
+	padding-left: 10px;
+	line-height: 20px;
+	
+	
+}
+
+#wraper.sidebarMenuDisplayed #sidebar-wraper{
+	left: 0px;
+	
+}
+
+#wraper.sidebarMenuDisplayed #page-content-wraper {
+	transition: margin-left 0.3s;
+	margin-left: 250px;
+	
+	
+}
+
+#wraper #page-content-wraper{
+		
+	margin-left: 0px;
+	transition: margin-left 0.3s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
